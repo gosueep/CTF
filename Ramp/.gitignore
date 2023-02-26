@@ -3,4 +3,4 @@
 
 # Don't ignore the zip folder of this dir
 !.gitignore
-!
+!RampWriteup.zip
