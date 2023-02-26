@@ -1,0 +1,6 @@
+# Ignore everything [don't want to give out answers :) ]
+*
+
+# Don't ignore the zip folder of this dir
+!.gitignore
+!
