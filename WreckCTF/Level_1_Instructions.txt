@@ -1,0 +1,22 @@
+Make it Plain (Text): Level 1
+---------------------------
+
+Mission: 
+--------
+You have come across the attached executable file, and you are trying to figure out what it does.
+
+In addition, you have found the following garbled string of letters:
+WZZV EZ ESP XZZY LYO DELCD EZ QTYO ESP LYDHPCD ESLE WTP HTESTY JZF
+
+Can you figure out what the executable file does?
+Then, can you use that knowledge to decrypt the phrase that you found?
+
+
+Details:
+--------
+This problem is worth 20 points.
+Submit as your answer the plaintext phrase.
+Periodically, hints will be released. For each hint that is released before your answer is submitted, the total amount of points that can be earned for this problem will be reduced by 5.
+For each incorrect answer that you submit, the total amount of points that can be earned for this problem will be reduced by 5.
+
+

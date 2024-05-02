@@ -1,0 +1,63 @@
+You have been asked for help to decrypt a message that the NSA believes to be
+related to a terrorist plot in the coming days. This terrorist cell has been known
+to use code words to encrypt messages. We believe they share code words amongst
+themselves using a different encryption mechanism. Below is a transcript that was
+pulled from communication between a new member of this terrorist cell and his
+superior.
+
+JohnDoe: Welcome to the team!
+
+CoolDude: Thanks. I received the two pieces of encryption software. I think that I
+have the key for the first, but I want to confirm. Is there a secure way to do
+that?
+
+JohnDoe: Sure. Run the following through the program and you should get the
+resulting outputs.
+	pinecone
+	Input:  0111000001101001011011100110010101100011011011110110111001100101
+	Key:	1000010110111111001011001010100010001000101111110110110010011010
+	Output: 1111010111010110010000101100100111101011110100000000001010011010
+
+	airplane
+	Input:  0110000101101001011100100111000001101100011000010110111001100101
+	Output: 1110111110010001101010101101101000011111011010101101101001101010
+
+	hijacked
+	Input:  0110100001101001011010100110000101100011011010110110010101100100
+	Output: 0010101010011000100000110000010001001000110000011000100000011100
+
+	cracking
+	Input:  0110001101110010011000010110001101101011011010010110111001100111
+	Output: 0010101010011000100000110000010001001000110000011000100000011100
+
+CoolDude: Looks good. It appears that I have the correct starter key.
+
+JohnDoe: Yesterday, we made a modification to the first piece of encryption software
+to make it more obscure. The second encryption routine remains the same since it is
+a more difficult algorithm to break. Update your first encryption routine using the
+attached patcher.
+
+[JohnDoe sent you an attachment .]
+
+JohnDoe: We can use the same initial key, but use the modified encryption routine.
+To confirm that the modification was successful, compare the following results.
+	pinecone
+	Input:  0111000001101001011011100110010101100011011011110110111001100101
+	Output: 1011110110100011000101100000111101011101100011010110110110111011
+
+CoolDude: Thanks. It appears to be working. Still using that output as the key to
+the second encryption routine?
+
+JohnDoe: No comment, newbie. Let's minimize chatter.
+
+JohnDoe:
+0100111001010011010000010011010001110111011010010110111000100001
+
+0110010110100101101101001100101100011000000010011011010101100100
+1001101011110001101101101000101000011010101110001000100101000000
+1100001011011010011010001011001001101111110010010000011100000000
+1111100010111111010001110111001110100110111001001101000110100101
+1011011111011011101000011001111001111010110010111010100001001110
+0101101011100010001000101011111111111111011100100110011000000101
+0101111101100101111100110001001010100100010101001110011110111111
+0100011110010001101110110001111001111010000010001001101111100111

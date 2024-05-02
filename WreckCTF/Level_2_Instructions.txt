@@ -1,0 +1,26 @@
+Make it Plain (Text): Level 2
+---------------------------
+
+Mission: 
+--------
+Another suspicious executable file has come to your attention. 
+It seems to be another encryption/decryption program, although it appears that some features haven't been fully implemented...
+While you are examining the program, you find another garbled string of letters: IEEBBZCNVICCLHAIVPEQFGZSYPPRFWLAAWXG.
+
+
+Using the provided executable file, can you decrypt the ciphertext?
+
+
+Details:
+--------
+This problem is worth 30 points.
+Submit as your answer the plaintext phrase.
+Periodically, hints will be released. For each hint that is released before your answer is submitted, the total amount of points that can be earned for this problem will be reduced by 5.
+For each incorrect answer that you submit, the total amount of points that can be earned for this problem will be reduced by 5.
+
+
+
+
+
+
+
