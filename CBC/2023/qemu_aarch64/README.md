@@ -11,6 +11,8 @@ Put your files in a local directory named `myfiles`, or change the `-v` option t
 
 ```
 sudo docker run -it --rm --device=/dev/net/tun:/dev/net/tun --cap-add NET_ADMIN -v $(pwd)/myfiles:/myfiles cbc_qemu_aarch64:latest
+
+docker run -it --rm --device=//dev/net/tun:/dev/net/tun --cap-add NET_ADMIN -v //$(pwd)/myfiles:/myfiles cbc_qemu_aarch64:latest
 ```
 
 To get an extra shell in the running container, use `docker exec`:

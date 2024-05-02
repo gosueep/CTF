@@ -24,8 +24,6 @@ RUN apt update && apt install -y \
 
 COPY qemu-ifup qemu-ifdown /
 
-COPY myfiles /myfiles
-
 WORKDIR /build
 
 ARG QEMU_SRC_URL=https://download.qemu.org/qemu-8.0.4.tar.xz
