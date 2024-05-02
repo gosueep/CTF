@@ -1,0 +1,64 @@
+The US Coast Guard (USCG) recorded an unregistered signal over 30 nautical miles away from the continental US (OCONUS). NSA is contacted to see if we have a record of a similar signal in our databases. The Coast guard provides a copy of the signal data. Your job is to provide the USCG any colluding records from NSA databases that could hint at the object’s location. Per instructions from the USCG, to raise the likelihood of discovering the source of the signal, they need multiple corresponding entries from the NSA database whose geographic coordinates are within 1/100th of a degree. Additionally, record timestamps should be no greater than 10 minutes apart.
+
+{
+    "coordinates": [
+        {
+            "latitude": "29.19148",
+            "longitude": "-85.16246"
+        }
+    ],
+    "timestamp": "03/03/2023, 12:20:34"
+}
+
+
+sqlite> .schema
+CREATE TABLE audio_object(
+        id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+        transcript,
+        contentUrl BLOB,
+        description,
+        name TEXT,
+        encodingFormat
+        );
+CREATE TABLE sqlite_sequence(name,seq);
+CREATE TABLE location(
+                id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+                latitude,
+                longitude,
+                elevation
+                );
+CREATE TABLE timestamp(
+        id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+        recTime TEXT,
+        recDate TEXT
+        );
+CREATE TABLE event(
+        id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+        location_id INTEGER,
+        name TEXT,
+        audio_object_id INTEGER,
+        timestamp_id INTEGER,
+        FOREIGN KEY (location_id) REFERENCES location(id),
+        FOREIGN KEY (audio_object_id) REFERENCES audio_object(id),
+        FOREIGN KEY (timestamp_id) REFERENCES timestamp(id)
+        );
+sqlite>
+
+sqlite> .tables
+audio_object  event         location      timestamp
+
+
+sqlite> select * from location where latitude-29>0 and latitude-29<1 and longitude+85<0 and longitude+85>-1;
+id | lat | long | elevation
+447|29.19416|-85.16336|0 m
+866|29.19575|-85.16349|0 m
+
+
+sqlite> SELECT * from event where location_id in (447, 866);
+id, loc_id, name, audio_object_id, timestamp_id
+447|447|f6d7b6fd4a8c757630ba21127b13ce78c04547fbd788aed68f59cdee0806d053|447|447
+866|866|ef4b7cfeac8b44b15512f8ac848d2b24a2c20d2f71d198ed6186e94ef5bde364|866|866
+sqlite>
+
+447
+866
